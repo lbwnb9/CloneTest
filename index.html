@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./flexible.js"></script>
+    
+</head>
+<body>
+    <div class="all" >
+    <div id="app">
+        <div class="title"><b>Create account</b></div>
+        <div class="connent">
+            Already have an account?
+            <a href="http://www.baidu.com">Sign in</a>
+        </div>
+        <div class="body">
+            <form class="input-all">
+                <div class="username">
+                    <input type="text" name="username" placeholder="username">
+                </div>
+                <div class="name">
+                    <input type="text" name="firstname" placeholder="First name">
+                    <input type="text" name="lastname" placeholder="Last name">
+                </div>
+                <div class="email">
+                    <input type="email" name="E-mail" placeholder="E-mail">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Sign up">
+                </div>
+                <div class="footer">
+                    <input type="checkbox">I have read and agree to the <a href="http://www.baidu.com">Trems of Service</a>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    </div>
+</body>
+</html>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    margin:0 auto;
+    height: 100vh;
+    background-image: linear-gradient(to top right,rgb(253,84,140), rgb(253,206,149));
+}
+#app{
+    height:3.5rem;
+    width: 3.5rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: .125rem;
+}
+.title,.connent,.username,.name,.email,.button{
+    text-align: center;
+}
+.title{
+    font-size: .25rem;
+    margin-top: .2rem;
+}
+.connent{
+    font-size: .12rem;
+    margin-top: 15px;
+}
+.username input,.email input{
+    width: 2.5rem;
+    height: .25rem;
+    border-radius: .0625rem;
+    margin: 15px 0;
+}
+.name input{
+    width: 1.23rem;
+    height: .225rem;
+    border-radius: .0625rem;
+    margin: 15px 0;
+}
+.button input{
+    width: 2.58rem;
+    height: .25rem;
+    border-radius: .0625rem;
+    margin: 15px 0;
+    background-color: rgb(76,153,252);
+    color: #fff;
+    font-size: .125rem;
+}
+.input-all input{
+    border:0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    outline-style: none;
+}
+.footer{
+    margin-left: 5px;
+}
+.body{
+     margin: .1875rem .4rem;
+}
+
+</style>
